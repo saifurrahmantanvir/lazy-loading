@@ -1,0 +1,39 @@
+.app {
+  margin: 0 auto;
+  max-width: 1200px;
+  
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: 380px) {
+      padding: 15px;
+    }
+  }
+}
+
+.image__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  content-visibility: visible;
+
+  @media only screen and (max-width: 380px) {
+    gap: 15px;
+  }
+}
+
+.image__wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
